@@ -34,7 +34,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap
 
-usage_doc = "Usage of script: script_nama <size_of_canvas:int>"
+usage_doc = "Usage of script: script_name <size_of_canvas:int>"
 
 choice = [0] * 100 + [1] * 10
 random.shuffle(choice)
@@ -98,7 +98,7 @@ def __judge_point(pt: bool, neighbours: list[list[bool]]) -> bool:
     if pt:
         if alive < 2:
             state = False
-        elif alive == 2 or alive == 3:
+        elif alive in {2, 3}:
             state = True
         elif alive > 3:
             state = False

@@ -72,7 +72,7 @@ class LinkedList:
         >>> len(linked_list)
         0
         """
-        return len(tuple(iter(self)))
+        return sum(1 for _ in self)
 
     def __repr__(self) -> str:
         """
@@ -107,6 +107,7 @@ class LinkedList:
         for i, node in enumerate(self):
             if i == index:
                 return node
+        return None
 
     # Used to change the data of a particular node
     def __setitem__(self, index: int, data: Any) -> None:
@@ -352,13 +353,13 @@ def test_singly_linked_list() -> None:
 
     try:
         linked_list.delete_head()
-        raise AssertionError()  # This should not happen.
+        raise AssertionError  # This should not happen.
     except IndexError:
         assert True  # This should happen.
 
     try:
         linked_list.delete_tail()
-        raise AssertionError()  # This should not happen.
+        raise AssertionError  # This should not happen.
     except IndexError:
         assert True  # This should happen.
 
