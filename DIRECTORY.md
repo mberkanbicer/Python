@@ -849,7 +849,6 @@
   * [Lfu Cache](other/lfu_cache.py)
   * [Linear Congruential Generator](other/linear_congruential_generator.py)
   * [Lru Cache](other/lru_cache.py)
-  * [Lru Cache Pythonic](other/lru_cache_pythonic.py)
   * [Magicdiamondpattern](other/magicdiamondpattern.py)
   * [Majority Vote Algorithm](other/majority_vote_algorithm.py)
   * [Maximum Subsequence](other/maximum_subsequence.py)
